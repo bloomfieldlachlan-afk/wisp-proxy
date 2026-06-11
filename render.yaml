@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: wisp-proxy
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 -m wisp.server --port $PORT
